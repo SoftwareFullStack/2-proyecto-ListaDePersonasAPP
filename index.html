@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="IMG/Logo-Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <title>LISTA DE PERSONAS</title>
+  </head>
+
+  <body onload="mostrarPersonas()" class="contRoot">
+    
+    <!-- LOGO -->
+    <div class="contLogo">
+      <img src="IMG/Logo-Icono.png" alt="" class="contLogo__img">
+    </div>
+
+    <!-- ENCABEZADO - TITULO -->
+    <div class="container" id="cabecera">
+      <h1 class="titulo">LISTA DE PERSONAS APP</h1>
+    </div>
+
+    <div class="container">
+      <div class="elemento">
+        <ul id="personas"></ul>
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="container">
+      <form class="formulario">
+        <input id="nombre" type="text" placeholder="Nombre" class="formulario__input"/>
+        <input id="apellido" type="text" placeholder="Apellido" class="formulario__input"/>
+      </form>
+    </div>
+
+    <!--  BOTON -->
+    <div class="contBtn">
+      <button class="contBtn__btn contBtn__btn--efecto" style="cursor: pointer" onclick="agregarPersona()">+</button>
+    </div>
+
+    <script src="JS/personas.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
